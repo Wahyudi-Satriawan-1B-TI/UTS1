@@ -8,7 +8,7 @@ double esTeh25 = 5000.0, esTehJumbo25 = 8000.0, diskon25 = 0.01, totalHarga25;
 String id25;
 boolean jenisTeh25, es25;
 do {
-    System.out.print("Masukkan ID pelanggan (Ketik 'selesai' untuk keluar) : ");
+    System.out.print("Masukkan ID pelanggan (5 digit) (Ketik 'selesai' untuk keluar) : ");
     id25 = sc.nextLine();
     if (id25.equalsIgnoreCase("selesai")) {
         System.out.println("Stand telah ditutup.");
@@ -19,7 +19,9 @@ do {
         gelas25 = sc.nextInt();
     } else {
         System.out.println("Input tidak valid! Masukkan angka.");
+        System.out.println("SILAHKAN MULAI ULANG PROGRAM.");
         sc.next();
+        System.out.println();
         continue;
     }
         
@@ -30,10 +32,11 @@ do {
         jenisTeh25 = sc.nextBoolean();
     } else {
         System.out.println("Input tidak valid! Masukkan 'true' atau 'false'.");
+        System.out.println("SILAHKAN MULAI ULANG PROGRAM.");
         sc.next();
+        System.out.println();
         continue;
     }
-    
     System.out.print("Tambahan Es (true/false)?: ");
     es25 = sc.nextBoolean();
     
