@@ -69,17 +69,13 @@ do {
             totalHarga25 = (esTeh25 * gelas25);
             totalHarga25 -= 500.0;
             } else {
-            totalHarga25 = (esTehJumbo25 * gelas25);
+            totalHarga25 = (esTeh25 * gelas25);
             }
         }
     }
 System.out.println("====================================");
 System.out.println("Jumlah gelas: " + gelas25);
-if (jenisTeh25 = true) {
-    System.out.println("Jenis es teh: Es teh jumbo");
-} else {
-    System.out.println("Jenis es teh: Es teh standar");
-}
+System.out.println("Jenis es teh: " + (jenisTeh25 ? "Es teh jumbo" : "Es teh standar"));
 System.out.println("Total harga: Rp " + totalHarga25);
 System.out.println("====================================");
 sc.nextLine();
